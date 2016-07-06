@@ -10,5 +10,5 @@
  */
 public class ClassyTest {
     private String name;
-    
+    private String apellido;
 }
