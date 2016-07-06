@@ -12,4 +12,5 @@ public class ClassyTest {
     private String name;
     private String apellido;
     private int edad;
+    private String colegio;
 }
