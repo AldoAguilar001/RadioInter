@@ -26,8 +26,23 @@ public class RadioMain implements Radio {
     private double button10;
     private double button11;
     private double button12;
+    private double button1AM;
+    private double button2AM;
+    private double button3AM;
+    private double button4AM;
+    private double button5AM;
+    private double button6AM;
+    private double button7AM;
+    private double button8AM;
+    private double button9AM;
+    private double button10AM;
+    private double button11AM;
+    private double button12AM;
     private int selectedButton;
     
+    /**
+     * Constructor RadioMain
+     */
     public RadioMain(){
         this.ON = false;
         this.FM = true;
@@ -43,6 +58,18 @@ public class RadioMain implements Radio {
         this.button10 = 87.9;
         this.button11 = 87.9;
         this.button12 = 87.9;
+        this.button1AM = 87.9;
+        this.button2AM = 87.9;
+        this.button3AM = 87.9;
+        this.button4AM = 87.9;
+        this.button5AM = 87.9;
+        this.button6AM = 87.9;
+        this.button7AM = 87.9;
+        this.button8AM = 87.9;
+        this.button9AM = 87.9;
+        this.button10AM = 87.9;
+        this.button11AM = 87.9;
+        this.button12AM = 87.9;
         this.Dial = 87.9;
         this.selectedButton = 0;
     }
@@ -101,39 +128,20 @@ public class RadioMain implements Radio {
     }
 
     @Override
+    /**
+     * Retorna la estacion guardada en el boton
+     */
     public String getStation() {
         String station = Double.toString(Dial);
         return station;
     }
 
     @Override
-    public void setStation() {
-        switch(this.selectedButton){
-            case 1:
-                this.button1 = Dial;
-            case 2:
-                this.button2 = Dial;
-            case 3:
-                this.button3 = Dial;
-            case 4:
-                this.button4 = Dial;
-            case 5:
-                this.button5 = Dial;
-            case 6:
-                this.button6 = Dial;
-            case 7:
-                this.button7 = Dial;
-            case 8:
-                this.button8 = Dial;
-            case 9:
-                this.button9 = Dial;
-            case 10:
-                this.button10 = Dial;
-            case 11:
-                this.button11 = Dial;
-            case 12:
-                this.button12 = Dial;
-        }
+    /**
+     * wefwef
+     */
+    public void setStation(String dial) {
+        this.Dial = Double.parseDouble(dial);
     }
 
     @Override
@@ -172,7 +180,61 @@ public class RadioMain implements Radio {
 
     @Override
     public void setMemory(String station, int position, String freq) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.Dial = Double.parseDouble(station);
+        if (FM){
+            switch(position){
+                case 1:
+                    this.button1 = Dial;
+                case 2:
+                    this.button2 = Dial;
+                case 3:
+                    this.button3 = Dial;
+                case 4:
+                    this.button4 = Dial;
+                case 5:
+                    this.button5 = Dial;
+                case 6:
+                    this.button6 = Dial;
+                case 7:
+                    this.button7 = Dial;
+                case 8:
+                    this.button8 = Dial;
+                case 9:
+                    this.button9 = Dial;
+                case 10:
+                    this.button10 = Dial;
+                case 11:
+                    this.button11 = Dial;
+                case 12:
+                    this.button12 = Dial;
+            }
+        } else {
+            switch(position){
+                case 1:
+                    this.button1AM = Dial;
+                case 2:
+                    this.button2AM = Dial;
+                case 3:
+                    this.button3AM = Dial;
+                case 4:
+                    this.button4AM = Dial;
+                case 5:
+                    this.button5AM = Dial;
+                case 6:
+                    this.button6AM = Dial;
+                case 7:
+                    this.button7AM = Dial;
+                case 8:
+                    this.button8AM = Dial;
+                case 9:
+                    this.button9AM = Dial;
+                case 10:
+                    this.button10AM = Dial;
+                case 11:
+                    this.button11AM = Dial;
+                case 12:
+                    this.button12AM = Dial;
+            }
+        } 
     }
-    
 }
