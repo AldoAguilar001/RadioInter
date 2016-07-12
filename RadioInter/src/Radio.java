@@ -16,7 +16,7 @@ public interface Radio {
     public String getFrequency();
     public void changeFrequency(String freq);
     public String getStation();
-    public void setStation();
+    public void setStation(String dial);
     public void Forward();
     public void Backward();
     public void setMemory(String station, int position, String freq);
