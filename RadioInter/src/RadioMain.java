@@ -27,6 +27,25 @@ public class RadioMain implements Radio {
     private double button11;
     private double button12;
     private int selectedButton;
+    
+    public RadioMain(){
+        this.ON = false;
+        this.FM = true;
+        this.button1 = 87.9;
+        this.button2 = 87.9;
+        this.button3 = 87.9;
+        this.button4 = 87.9;
+        this.button5 = 87.9;
+        this.button6 = 87.9;
+        this.button7 = 87.9;
+        this.button8 = 87.9;
+        this.button9 = 87.9;
+        this.button10 = 87.9;
+        this.button11 = 87.9;
+        this.button12 = 87.9;
+        this.Dial = 87.9;
+        this.selectedButton = 0;
+    }
 
     @Override
     /**
@@ -136,7 +155,19 @@ public class RadioMain implements Radio {
 
     @Override
     public void Backward() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (FM){
+            if (this.Dial > 87.9){
+                this.Dial = this.Dial - 0.2;
+            } else if (this.Dial == 87.9){
+                this.Dial = 107.9;
+            }
+        } else {
+            if (this.Dial > 530){
+                this.Dial = this.Dial - 10;
+            } else if (this.Dial == 530){
+                this.Dial = 1610;
+            }
+        }
     }
 
     @Override
