@@ -26,6 +26,7 @@ public class RadioMain implements Radio {
     private double button10;
     private double button11;
     private double button12;
+    private int selectedButton;
 
     @Override
     /**
@@ -67,6 +68,9 @@ public class RadioMain implements Radio {
     }
 
     @Override
+    /**
+     * Cambia la frecuencia del radio
+     */
     public void changeFrequency(String freq) {
         if (freq.equals("FM")){
             this.FM = true;
@@ -79,17 +83,55 @@ public class RadioMain implements Radio {
 
     @Override
     public String getStation() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String station = Double.toString(Dial);
+        return station;
     }
 
     @Override
     public void setStation() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        switch(this.selectedButton){
+            case 1:
+                this.button1 = Dial;
+            case 2:
+                this.button2 = Dial;
+            case 3:
+                this.button3 = Dial;
+            case 4:
+                this.button4 = Dial;
+            case 5:
+                this.button5 = Dial;
+            case 6:
+                this.button6 = Dial;
+            case 7:
+                this.button7 = Dial;
+            case 8:
+                this.button8 = Dial;
+            case 9:
+                this.button9 = Dial;
+            case 10:
+                this.button10 = Dial;
+            case 11:
+                this.button11 = Dial;
+            case 12:
+                this.button12 = Dial;
+        }
     }
 
     @Override
     public void Forward() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (FM){
+            if (this.Dial < 107.9){
+                this.Dial = this.Dial + 0.2;
+            } else if (this.Dial == 107.9){
+                this.Dial = 87.9;
+            }
+        } else {
+            if (this.Dial < 1610){
+                this.Dial = this.Dial + 10;
+            } else if (this.Dial == 1610){
+                this.Dial = 530;
+            }
+        }
     }
 
     @Override
