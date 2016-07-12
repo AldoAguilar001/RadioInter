@@ -10,10 +10,15 @@
  * @author Aldo Aguilar N.
  */
 public interface Radio {
-    public void radioON(); /* Metodo para prender radio */
-    public void changeFrequency(); /* Metodo para cambiar de FM a AM */
-    public void avanzarDial(); /* Metodo para avanzar en dial del radio FM(87.9-107.9; +0.2) o AM(530-1610; +10) */
-    public void guardarEmisora(); /* Metodo para guardar emisora en un boton de 12 botones disponibles */
-    public void seleccionarEmisora(); /* Metodo para seleccionar emisora dependiendo de boton seleccionado */
-    public void radioOFF(); /* Metodo para apagar radio */
-}
+    public void ON();
+    public void OFF();
+    public boolean isON();
+    public String getFrequency();
+    public void changeFrequency(String freq);
+    public String getStation();
+    public void setStation();
+    public void Forward();
+    public void Backward();
+    public void setMemory(String station, int position, String freq);
+    public String toString();
+} 
