@@ -53,13 +53,28 @@ public class RadioMain implements Radio {
     }
 
     @Override
+    /**
+     * Retorna la frecuencia en la que se encuentra el radio
+     */
     public String getFrequency() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String fm = "FM";
+        String am = "AM";
+        if (FM){
+            return fm;
+        } else {
+            return am;
+        }
     }
 
     @Override
     public void changeFrequency(String freq) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (freq.equals("FM")){
+            this.FM = true;
+        } else if (freq.equals("AM")){
+            this.FM = false;
+        } else {
+            System.out.println("Error: Mal ingreso. RadioMain ln.76");
+        }
     }
 
     @Override
