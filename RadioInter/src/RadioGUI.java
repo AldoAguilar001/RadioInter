@@ -30,6 +30,12 @@ public class RadioGUI extends javax.swing.JFrame {
         jButton7.setEnabled(false);
         jButton9.setEnabled(false);
         jButton10.setEnabled(false);
+        jButton8.setEnabled(false);
+        jButton12.setEnabled(false);
+        jButton13.setEnabled(false);
+        jButton14.setEnabled(false);
+        jButton15.setEnabled(false);
+        jButton16.setEnabled(false);
         jToggleButton1.setEnabled(false);
     }
 
