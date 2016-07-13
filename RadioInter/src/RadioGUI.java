@@ -54,6 +54,12 @@ public class RadioGUI extends javax.swing.JFrame {
         jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
         jToggleButton1 = new javax.swing.JToggleButton();
+        jButton8 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
+        jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        jButton16 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -61,7 +67,7 @@ public class RadioGUI extends javax.swing.JFrame {
         setBackground(new java.awt.Color(102, 102, 102));
         setForeground(new java.awt.Color(102, 102, 102));
         setLocation(new java.awt.Point(300, 250));
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().setLayout(null);
 
         jTextField1.setEditable(false);
         jTextField1.setBackground(new java.awt.Color(0, 0, 0));
@@ -76,7 +82,8 @@ public class RadioGUI extends javax.swing.JFrame {
                 jTextField1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 487, 72));
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(130, 50, 487, 72);
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onbut1.jpg"))); // NOI18N
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -85,7 +92,8 @@ public class RadioGUI extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 48, -1));
+        getContentPane().add(jButton1);
+        jButton1.setBounds(50, 50, 48, 45);
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton2.setText("1");
@@ -94,7 +102,8 @@ public class RadioGUI extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 75, -1));
+        getContentPane().add(jButton2);
+        jButton2.setBounds(130, 130, 75, 23);
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton3.setText("2");
@@ -103,7 +112,8 @@ public class RadioGUI extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, 71, -1));
+        getContentPane().add(jButton3);
+        jButton3.setBounds(210, 130, 71, 23);
 
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton4.setText("3");
@@ -112,7 +122,8 @@ public class RadioGUI extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, 74, -1));
+        getContentPane().add(jButton4);
+        jButton4.setBounds(290, 130, 74, 23);
 
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton5.setText("4");
@@ -121,7 +132,8 @@ public class RadioGUI extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, 75, -1));
+        getContentPane().add(jButton5);
+        jButton5.setBounds(370, 130, 75, 23);
 
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton6.setText("5");
@@ -130,7 +142,8 @@ public class RadioGUI extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 130, 79, -1));
+        getContentPane().add(jButton6);
+        jButton6.setBounds(450, 130, 79, 23);
 
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton7.setText("6");
@@ -139,7 +152,8 @@ public class RadioGUI extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 130, 79, -1));
+        getContentPane().add(jButton7);
+        jButton7.setBounds(530, 130, 79, 23);
 
         jButton9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton9.setText(">");
@@ -148,7 +162,8 @@ public class RadioGUI extends javax.swing.JFrame {
                 jButton9ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 110, 50, 45));
+        getContentPane().add(jButton9);
+        jButton9.setBounds(670, 110, 50, 45);
 
         jButton10.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton10.setText("<");
@@ -157,7 +172,8 @@ public class RadioGUI extends javax.swing.JFrame {
                 jButton10ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 110, -1, 45));
+        getContentPane().add(jButton10);
+        jButton10.setBounds(620, 110, 47, 45);
 
         jButton11.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton11.setText("FM/AM");
@@ -166,14 +182,77 @@ public class RadioGUI extends javax.swing.JFrame {
                 jButton11ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, 45));
+        getContentPane().add(jButton11);
+        jButton11.setBounds(20, 110, 97, 45);
 
         jToggleButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jToggleButton1.setText("SAVE");
-        getContentPane().add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 50, 100, 50));
+        getContentPane().add(jToggleButton1);
+        jToggleButton1.setBounds(620, 50, 100, 50);
+
+        jButton8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton8.setText("12");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton8);
+        jButton8.setBounds(530, 160, 73, 23);
+
+        jButton12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton12.setText("7");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton12);
+        jButton12.setBounds(130, 160, 70, 23);
+
+        jButton13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton13.setText("8");
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton13);
+        jButton13.setBounds(210, 160, 73, 23);
+
+        jButton14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton14.setText("9");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton14);
+        jButton14.setBounds(290, 160, 73, 23);
+
+        jButton15.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton15.setText("10");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton15);
+        jButton15.setBounds(370, 160, 73, 23);
+
+        jButton16.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton16.setText("11");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton16);
+        jButton16.setBounds(450, 160, 73, 23);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondonaranja3.jpg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 200));
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 740, 200);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -354,6 +433,126 @@ public class RadioGUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton7ActionPerformed
 
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        if (jToggleButton1.isSelected()){
+            if (RADIO.getFrequency().equals("FM")){
+                RADIO.setButton12(Double.parseDouble(RADIO.getStation()));
+            } else {
+                RADIO.setButton12AM(Double.parseDouble(RADIO.getStation()));
+            }
+            jTextField1.setText("SAVED");
+            jToggleButton1.setSelected(false);
+        } else { 
+            if (RADIO.getFrequency().equals("FM")){
+                RADIO.setStation(Double.toString(RADIO.getButton12()));
+                jTextField1.setText(Double.toString(RADIO.getButton12()));
+            } else {
+                RADIO.setStation(Double.toString(RADIO.getButton12AM()));
+                jTextField1.setText(Double.toString(RADIO.getButton12AM()));
+            }
+        }
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        if (jToggleButton1.isSelected()){
+            if (RADIO.getFrequency().equals("FM")){
+                RADIO.setButton8(Double.parseDouble(RADIO.getStation()));
+            } else {
+                RADIO.setButton8AM(Double.parseDouble(RADIO.getStation()));
+            }
+            jTextField1.setText("SAVED");
+            jToggleButton1.setSelected(false);
+        } else { 
+            if (RADIO.getFrequency().equals("FM")){
+                RADIO.setStation(Double.toString(RADIO.getButton8()));
+                jTextField1.setText(Double.toString(RADIO.getButton8()));
+            } else {
+                RADIO.setStation(Double.toString(RADIO.getButton8AM()));
+                jTextField1.setText(Double.toString(RADIO.getButton8AM()));
+            }
+        }
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        if (jToggleButton1.isSelected()){
+            if (RADIO.getFrequency().equals("FM")){
+                RADIO.setButton9(Double.parseDouble(RADIO.getStation()));
+            } else {
+                RADIO.setButton9AM(Double.parseDouble(RADIO.getStation()));
+            }
+            jTextField1.setText("SAVED");
+            jToggleButton1.setSelected(false);
+        } else { 
+            if (RADIO.getFrequency().equals("FM")){
+                RADIO.setStation(Double.toString(RADIO.getButton9()));
+                jTextField1.setText(Double.toString(RADIO.getButton9()));
+            } else {
+                RADIO.setStation(Double.toString(RADIO.getButton9AM()));
+                jTextField1.setText(Double.toString(RADIO.getButton9AM()));
+            }
+        }
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        if (jToggleButton1.isSelected()){
+            if (RADIO.getFrequency().equals("FM")){
+                RADIO.setButton10(Double.parseDouble(RADIO.getStation()));
+            } else {
+                RADIO.setButton10AM(Double.parseDouble(RADIO.getStation()));
+            }
+            jTextField1.setText("SAVED");
+            jToggleButton1.setSelected(false);
+        } else { 
+            if (RADIO.getFrequency().equals("FM")){
+                RADIO.setStation(Double.toString(RADIO.getButton10()));
+                jTextField1.setText(Double.toString(RADIO.getButton10()));
+            } else {
+                RADIO.setStation(Double.toString(RADIO.getButton10AM()));
+                jTextField1.setText(Double.toString(RADIO.getButton10AM()));
+            }
+        }
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        if (jToggleButton1.isSelected()){
+            if (RADIO.getFrequency().equals("FM")){
+                RADIO.setButton11(Double.parseDouble(RADIO.getStation()));
+            } else {
+                RADIO.setButton11AM(Double.parseDouble(RADIO.getStation()));
+            }
+            jTextField1.setText("SAVED");
+            jToggleButton1.setSelected(false);
+        } else { 
+            if (RADIO.getFrequency().equals("FM")){
+                RADIO.setStation(Double.toString(RADIO.getButton11()));
+                jTextField1.setText(Double.toString(RADIO.getButton11()));
+            } else {
+                RADIO.setStation(Double.toString(RADIO.getButton11AM()));
+                jTextField1.setText(Double.toString(RADIO.getButton11AM()));
+            }
+        }
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        if (jToggleButton1.isSelected()){
+            if (RADIO.getFrequency().equals("FM")){
+                RADIO.setButton7(Double.parseDouble(RADIO.getStation()));
+            } else {
+                RADIO.setButton7AM(Double.parseDouble(RADIO.getStation()));
+            }
+            jTextField1.setText("SAVED");
+            jToggleButton1.setSelected(false);
+        } else { 
+            if (RADIO.getFrequency().equals("FM")){
+                RADIO.setStation(Double.toString(RADIO.getButton7()));
+                jTextField1.setText(Double.toString(RADIO.getButton7()));
+            } else {
+                RADIO.setStation(Double.toString(RADIO.getButton7AM()));
+                jTextField1.setText(Double.toString(RADIO.getButton7AM()));
+            }
+        }
+    }//GEN-LAST:event_jButton12ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -393,12 +592,18 @@ public class RadioGUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField jTextField1;
