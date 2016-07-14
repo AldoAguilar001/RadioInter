@@ -324,7 +324,7 @@ public class RadioGUI extends javax.swing.JFrame {
         if (RADIO.getFrequency().equals("FM")){
             RADIO.changeFrequency("AM");
             RADIO.setStation("530");
-            jTextField1.setText("530.0");
+            jTextField1.setText("530");
         } else {
             RADIO.changeFrequency("FM");
             RADIO.setStation("87.9");
